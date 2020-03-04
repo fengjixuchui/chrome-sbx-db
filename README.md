@@ -5,9 +5,17 @@ A Collection of Chrome Sandbox Escape POCs/Exploits for learning.
 
 Issue | Type | Summary | Label | Reporter | Links
 -- | -- | -- | -- | -- | --
+[crbug-1027152](https://crbug.com/1027152) | Patch POC | Heap Overflow in PasswordFormManager | CVE-2019-13726, M-78 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [p0-1972](https://crbug.com/project-zero/1972)  
+[crbug-1025067](https://crbug.com/1025067) | MojoJS POC | UAF in BluetoothAdapter | CVE-2019-13725, M-78, M-79, reward-20000 | [Gengming Liu](https://crbug.com/?q=Gengming%20Liu%20OR%20l.dmxcsnsbh%40gmail.com&can=1), Jianyu Chen | - 
+[crbug-1024121](https://crbug.com/1024121) | MojoJS POC | UAF in WebBluetoothServiceImpl | CVE-2019-13723, M-78, M-79, reward-20000 | [Yuxiang Li](https://crbug.com/?q=reporter%3Axbalien29%40gmail.com&can=1) | - 
+[crbug-1024116](https://crbug.com/1024116) | MojoJS POC | OOB Access in WebBluetoothServiceImpl | CVE-2019-13724, M-78, reward-20000 | [Yuxiang Li](https://crbug.com/?q=reporter%3Axbalien29%40gmail.com&can=1) | - 
+[crbug-1005753](https://crbug.com/1005753) | Patch POC | UAF in IndexedDB | CVE-2019-13693, M-77, M-78, reward-20500 | [Guang Gong](https://crbug.com/?q=Guang%20Gong%20OR%20reporter%3Ahigongguang%40gmail.com&can=1) | -
+[crbug-1004730](https://crbug.com/1004730) | Patch POC | UAF in MojoAudioDecoder | CVE-2019-13695, M-77, reward-15000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
+[crbug-1001503](https://crbug.com/1001503) | MojoJS POC | UAF in Aura | CCVE-2019-13699, M-77, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-1000934](https://crbug.com/1000934) | HTML POC | UAF in Sharing | CVE-2019-13685, M-77, M-78, reward-15000 | [chromium.khalil](https://crbug.com/?q=reporter%3Achromium.khalil%40gmail.com&can=1) | -
 [crbug-1000002](https://crbug.com/1000002) | MojoJS POC | UAF in OfflinePage2 (Android) | CVE-2019-13686, M-76, reward-20000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | -
 [crbug-998548](https://crbug.com/998548) | MojoJS POC | UAF in ImageCapture | CVE-2019-13687, M-76, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
+[crbug-998431](https://crbug.com/998431) | MojoJS POC | Heap Overflow in GamepadService | CVE-2019-13700, M-77, reward-15000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-997190](https://crbug.com/997190) | Patch POC | UAF in MediaSession (Android) | CVE-2019-5876, M-76, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-996741](https://crbug.com/996741) | Patch POC | Logic Bug in Payment Handler API | M-76 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [p0-1928](https://crbug.com/project-zero/1928)
 [crbug-995964](https://crbug.com/995964) | MojoJS POC | UAF in VideoCapture | CVE-2019-13688, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
@@ -17,7 +25,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-981873](https://crbug.com/981873) | MojoJS POC | UAF in IndexedDB ~LevelDBIteratorImpl | M-76 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1904](https://crbug.com/project-zero/1904) 
 [crbug-977462](https://crbug.com/977462) | MojoJS POC | UAF in OfflinePage (Android) | CVE-2019-5850, M-75, reward-10000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | [crbug-977195](https://crbug.com/977195) 
 [crbug-972239](https://crbug.com/972239#c26) | MojoJS POC | UAF in IndexedDB IndexedDBTransaction::Abort | M-76 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | - 
-[crbug-971702](https://crbug.com/971702) | HTML POC | UAF in chrome!content::Portal::Activate | M-76, reward-8000 | [Pawel Wylecial](https://crbug.com/?q=reporter%3Apawel%40blackowlsec.com&can=1) | -
+[crbug-971702](https://crbug.com/971702) | HTML POC | UAF in chrome!content::Portal::Activate | M-76, reward-8000 | [Pawel Wylecial](https://crbug.com/?q=reporter%3Apawel%40blackowlsec.com&can=1) | [crbug-968142](https://crbug.com/968142), [RedTeam Blog](https://blog.redteam.pl/2019/12/chrome-portal-element-fuzzing.html)
 [crbug-966784](https://crbug.com/966784) | MojoJS POC | UAF in IndexedDB AbortAllTransactions | M-76, reward-5000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-966762](https://crbug.com/966762) | MojoJS POC | UAF in IndexedDB RequestComplete 2 | M-76, reward-10500 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-962500](https://crbug.com/962500) | HTML POC | Logic Bug in WebUI | reward-10000 | [Michal Bentkowski](https://crbug.com/?q=Michal%20Bentkowski&can=1) | -
@@ -26,7 +34,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-948172](https://crbug.com/948172) | Full Chain Exploit | Logic Bug in PDF plugin using Pepper Socket API | M-75 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=402215&signed_aid=uJieSMQe19F_G21FV0OaCg==), [crbug-950005](https://crbug.com/950005), [p0-1813](https://crbug.com/project-zero/1813), [p0-1817](https://crbug.com/project-zero/1817)
 [crbug-945370](https://crbug.com/945370) | HTML POC | UAF in IndexedDB DeleteRequest | M-75, reward-8000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-942898](https://crbug.com/942898) | HTML POC | UAF in  IndexedDB RequestComplete | M-74, reward-10000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
-[crbug-941746](https://crbug.com/941746) | Full Chain WriteUp | UAF in IndexedDBDatabase (Pwnium 2019) | CVE-2019-5826, M-73 | [Gengming Liu](https://crbug.com/?q=l.dmxcsnsbh%40gmail.com&can=1) | [BlackhatUSA2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf), [POC2019](http://www.powerofcommunity.net/poc2019/Gengming.pdf)
+[crbug-941746](https://crbug.com/941746) | Full Chain WriteUp | UAF in IndexedDBDatabase (Pwnium 2019) | CVE-2019-5826, M-73 | [Gengming Liu](https://crbug.com/?q=Gengming%20Liu%20OR%20l.dmxcsnsbh%40gmail.com&can=1) | [BlackhatUSA2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf), [POC2019](http://www.powerofcommunity.net/poc2019/Gengming.pdf)
 [crbug-941008](https://crbug.com/941008) | MojoJS POC | UAF in FileChooserImpl | CVE-2019-5809, M-73, M-74, M-75 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1803](https://crbug.com/project-zero/1803)
 [crbug-925864](https://crbug.com/925864) | MojoJS POC | UAF in FileSystemOperationRunner | CVE-2019-5788, M-73 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1767](https://crbug.com/project-zero/1767) 
 [crbug-922677](https://crbug.com/922677) | Full Chain Exploit | UAF in FileWriterImpl | M-71 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=388589&signed_aid=l6i6pjLBlXcNkkKWiDvd9A==), [p0-1755](https://crbug.com/project-zero/1755), [P0 Blog](https://googleprojectzero.blogspot.com/2019/04/virtually-unlimited-memory-escaping.html)
@@ -54,7 +62,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-698622](https://crbug.com/698622) | HTML POC | UAF in Printing | CVE-2017-5055, M-57, M-58, reward-9337 | [Wadih Matar](https://crbug.com/?q=reporter%3Awadih.matar%40gmail.com&can=1) | - 
 [crbug-664551](https://crbug.com/664551) | Full Chain Exploit | Logic Bug in Android Play Store (PWNFest 2016) | M-55 | [Guang Gong](https://crbug.com/?q=Guang%20Gong%20OR%20reporter%3Ahigongguang%40gmail.com&can=1) | [Github](https://github.com/secmob/pwnfest2016)
 [crbug-659489](https://crbug.com/659489) | Full Chain WriteUp | Logic Bug in Android "content:" Scheme URL, File Download (Mobile Pwn2Own 2016) | M-54 | Robert Miller, Georgi Geshev | [crbug-659492](https://crbug.com/659492), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=256529&signed_aid=SVqnSnUXkCxCd2kvi4taPQ==)
-[crbug-659474](https://crbug.com/659474) | Full Chain WriteUp | Logic Bug in Android "intent:" Scheme URL, IPC (Mobile Pwn2Own 2016) | M-54 | Qidan He, [Gengming Liu](https://crbug.com/?q=l.dmxcsnsbh%40gmail.com&can=1) | [crbug-659477](https://crbug.com/659477), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=256510&signed_aid=aCap7zbHUwwvY27EqLSDQw==), [CSW2017](https://cansecwest.com/slides/2017/CSW2017_QidanHe-GengmingLiu_Pwning_Nexus_of_Every_Pixel.pdf) 
+[crbug-659474](https://crbug.com/659474) | Full Chain WriteUp | Logic Bug in Android "intent:" Scheme URL, IPC (Mobile Pwn2Own 2016) | M-54 | Qidan He, [Gengming Liu](https://crbug.com/?q=Gengming%20Liu%20OR%20l.dmxcsnsbh%40gmail.com&can=1) | [crbug-659477](https://crbug.com/659477), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=256510&signed_aid=aCap7zbHUwwvY27EqLSDQw==), [CSW2017](https://cansecwest.com/slides/2017/CSW2017_QidanHe-GengmingLiu_Pwning_Nexus_of_Every_Pixel.pdf) 
 [crbug-610600](https://crbug.com/610600) | Frida Exploit | Logic Bug in PPAPI/Flash Broker | CVE-2016-1706, M-52, reward-15000 | [Pinkie Pie](https://crbug.com/?q=Pinkie%20Pie%20OR%20reporter%3A70696e6b6965706965%40gmail.com&can=1) | -
 [crbug-595834](https://crbug.com/595834) | Full Chain Exploit | Logic Bug in GPU, WebUI, SmartScreen (Pwn2Own 2016) | - | [JungHoon Lee](https://crbug.com/?q=reporter%3Alkhz49%40gmail.com,lokihardt%40google.com&can=1) | [crbug-595844](https://crbug.com/595844), [crbug-596862](https://crbug.com/596862), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=227798&signed_aid=BJUc8JNFcIyk7erbvIE1EQ==)
 [crbug-590284](https://crbug.com/590284) | Patch POC | UAF in RenderWidgetHostImpl | CVE-2016-1647, M-49, M-50, reward-10500 | [gzobqq](https://crbug.com/?q=reporter%3Agzobqq%40gmail.com&can=1) | - 
@@ -78,13 +86,8 @@ Issue | Type | Summary | Label | Reporter | Links
 
 Issue Number | Patch Version | Summary | Reporter 
 -- | -- | -- | -- 
-[crbug-1025067](https://crbug.com/1025067) | [79.0.3945.79](https://chromereleases.googleblog.com/2019/12/stable-channel-update-for-desktop.html) | [$20000] Critical CVE-2019-13725: Use after free in Bluetooth  | Gengming Liu, Jianyu Chen
-[crbug-1027152](https://crbug.com/1027152) | [79.0.3945.79](https://chromereleases.googleblog.com/2019/12/stable-channel-update-for-desktop.html) | [$TBD] Critical CVE-2019-13726: Heap buffer overflow in password manager | Sergei Glazunov
-[crbug-1024121](https://crbug.com/1024121) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13723: Use-after-free in Bluetooth  | Yuxiang Li
-[crbug-1024116](https://crbug.com/1024116) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13724: Out-of-bounds access in Bluetooth | Yuxiang Li
-[crbug-1001503](https://crbug.com/1001503) | [78.0.3904.70](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_22.html) | [$20000] High CVE-2019-13699: Use-after-free in media | Man Yue Mo
-[crbug-1005753](https://crbug.com/1005753) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$20500] High CVE-2019-13693: Use-after-free in IndexedDB |  Guang Gong
-[crbug-1004730](https://crbug.com/1004730) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$15000] High CVE-2019-13695: Use-after-free in audio | Man Yue Mo
+[crbug-1018677](https://crbug.com/1018677) | [79.0.3945.130](https://chromereleases.googleblog.com/2020/01/stable-channel-update-for-desktop_16.html) | [$TBD] Critical CVE-2020-6378: Use-after-free in speech recognizer  | Antti Levomäki, Christian Jalio
+[crbug-1032170](https://crbug.com/1032170) | [79.0.3945.130](https://chromereleases.googleblog.com/2020/01/stable-channel-update-for-desktop_16.html) | [$N/A] High CVE-2020-6380: Extension message verification error  | Sergei Glazunov
 [crbug-999311](https://crbug.com/999311) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
 [crbug-989797](https://crbug.com/989797) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
 [crbug-959438](https://crbug.com/959438) | [76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html) | [$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
@@ -132,17 +135,21 @@ Issue Number | Patch Version | Summary | Reporter
 * [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
 ## Other Materials 
+* [Project Zero Blog - Escaping the Chrome Sandbox with RIDL (2020)](https://googleprojectzero.blogspot.com/2020/02/escaping-chrome-sandbox-with-ridl.html)
+* [Project Zero Blog - A day^W^W Several months in the life of Project Zero - Part 1: The Chrome bug of suffering (2020)](https://googleprojectzero.blogspot.com/2020/02/several-months-in-life-of-part1.html)
+* [Project Zero Blog - A day^W^W Several months in the life of Project Zero - Part 2: The Chrome exploit of suffering (2020)](https://googleprojectzero.blogspot.com/2020/02/several-months-in-life-of-part2.html)
 * [Abdulrahman Al-Qabandi Blog (2019) - Microsoft Edge (Chromium): EoP via XSS to Potential RCE](https://leucosite.com/Edge-Chromium-EoP-RCE/)
 * [Blue Forest Security (2019) - Escaping the Chrome Sandbox via an IndexedDB Race Condition](https://labs.bluefrostsecurity.de/blog/2019/08/08/escaping-the-chrome-sandbox-via-an-indexeddb-race-condition/) 
 * [Exodus Intelligence (2019) - WINDOWS WITHIN WINDOWS: ESCAPING THE CHROME SANDBOX WITH A WIN32K NDAY](https://blog.exodusintel.com/2019/05/17/windows-within-windows/)
 * [Tencent Xuanwu Lab (Blackhat Asia 2019) - Attacking Browser Sandbox: Live Persistently and Prosperously](https://i.blackhat.com/asia-19/Fri-March-29/bh-asia-Ma-Attacking-Browser-Sandbox.pdf)
+* [Flanker Sky (2019) - Galaxy Leapfrogging: Pwning the Galaxy S8](https://blog.flanker017.me/galaxy-leapfrogging-pwning-the-galaxy-s8/)
 * [WCTF 2019 - Mojojojo](https://drive.google.com/drive/u/0/folders/1xijouA9fj1YUrY97wyoEQCZ5Q3tRWNOq)  
-* [Eternal Stories (2019) - monochromatic writeup](http://eternal.red/2019/monochromatic-writeup/)
-* [Google CTF 2019 - monochromatic](https://github.com/google/google-ctf/tree/master/2019/quals/sandbox-monochromatic)  
+* [Eternal Stories (2019) - Google CTF 2019 monochromatic writeup](http://eternal.red/2019/monochromatic-writeup/)
 * [Google CTF 2018 - pwn-mojo](https://github.com/google/google-ctf/tree/master/2018/finals/pwn-mojo)  
 * [360 Alpha Team (CanSecWest 2018) - Attacks and analysis of the Samsung S8 from Mobile PWN2OWN](https://cansecwest.com/slides/2018/Attacks%20and%20Analysis%20of%20the%20Samsung%20S8%20from%20Mobile%20PWN2OWN%20-%20Guang%20Gong%20and%20Jianjun%20Dai,%20Qihoo%20360.pdf)
 * [Microsoft Blog - Browser security beyond sandboxing (2017)](https://www.microsoft.com/security/blog/2017/10/18/browser-security-beyond-sandboxing/?source=mmpc)
 * [X41 - Browser Security White Paper (2017)](https://paper.seebug.org/papers/Archive/X41-Browser-Security-White-Paper.pdf)
+* [KEEN Team (CanSecWest 2017) - Pwning the Nexus of Every Pixel](https://cansecwest.com/slides/2017/CSW2017_QidanHe-GengmingLiu_Pwning_Nexus_of_Every_Pixel.pdf)
 * [KEEN Team (DEFCON24 2016) - Escaping The Sandbox By Not Breaking It](https://papers.put.as/papers/macosx/2016/sandbox_defcon.pdf)
 * [James Forshaw (Troopers 2016) - The Joy of Sandbox Mitigations](https://www.troopers.de/media/filer_public/f6/07/f6076037-85e0-42b7-9a51-507986edafce/the_joy_of_sandbox_mitigations_export.pdf)
 * [James Forshaw (Nullcon 2015) - The Windows Sandbox Paradox](https://nullcon.net/website/archives/ppt/goa-15/the-windows-sandbox-paradox.pdf)
